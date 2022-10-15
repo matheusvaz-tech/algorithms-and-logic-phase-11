@@ -1,11 +1,14 @@
-let number_1 = prompt("Digite o 1º número:");
-let number_2 = prompt("Digite o 2º número:");
+let firstNumber = prompt("Digite o 1º número:");
+let secondNumber = prompt("Digite o 2º número:");
 
-let sum = Number(number_1) + Number(number_2);
-let sub = Number(number_1) - Number(number_2);
-let div = Number(number_1) / Number(number_2);
-let mul = Number(number_1) * Number(number_2);
-let res = Number(number_1) % Number(number_2);
+firstNumber = Number(firstNumber);
+secondNumber = Number(secondNumber);
+
+const sum = firstNumber + secondNumber;
+const sub = firstNumber - secondNumber;
+const div = firstNumber / secondNumber;
+const mul = firstNumber * secondNumber;
+const res = firstNumber % secondNumber;
 
 alert(`A soma dos números é: ${sum};
 A subtração dos números é: ${sub};
