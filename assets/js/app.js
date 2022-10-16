@@ -36,6 +36,12 @@ while (Number(result) !== randomNumber) {
   x++;
 }
 
-alert(
-  `Parabéns! O número que pensei foi o ${randomNumber} e você adivinhou em ${x} tentativas.`
-);
+if (x == 1) {
+  alert(
+    `Parabéns! O número que pensei foi o ${randomNumber} e você adivinhou em ${x} tentativa.`
+  );
+} else {
+  alert(
+    `Parabéns! O número que pensei foi o ${randomNumber} e você adivinhou em ${x} tentativas.`
+  );
+}
