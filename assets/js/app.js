@@ -1,4 +1,4 @@
-let name = prompt("Qual é o seu nome?");
+let student = prompt("Qual é o seu nome?");
 
 let grade_1 = prompt("Qual foi sua a nota dna 1ª prova do bimestre?");
 let grade_2 = prompt("E qual foi a 2ª nota?");
@@ -12,13 +12,13 @@ let average = (grade_1 + grade_2 + grade_3) / 3;
 
 if (average >= 7) {
   alert(
-    `Parabéns pelo seu empenho, ${name}. Você foi aprovado com a média ${average.toFixed(
+    `Parabéns pelo seu empenho, ${student}. Você foi aprovado com a média ${average.toFixed(
       2
     )}.`
   );
 } else {
   alert(
-    `Infelizmente você não passou direto, ${name}. Sua média foi ${average.toFixed(
+    `Infelizmente você não passou direto, ${student}. Sua média foi ${average.toFixed(
       2
     )}, mas com esforço e dedicação você se sairá bem no exame de recuperação.`
   );
