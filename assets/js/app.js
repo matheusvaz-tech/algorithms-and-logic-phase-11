@@ -1,17 +1,25 @@
-let firstNumber = prompt("Digite o 1º número:");
-let secondNumber = prompt("Digite o 2º número:");
+let name = prompt("Qual é o seu nome?");
 
-firstNumber = Number(firstNumber);
-secondNumber = Number(secondNumber);
+let grade_1 = prompt("Qual foi sua a nota dna 1ª prova do bimestre?");
+let grade_2 = prompt("E qual foi a 2ª nota?");
+let grade_3 = prompt("E a 3ª?");
 
-const sum = firstNumber + secondNumber;
-const sub = firstNumber - secondNumber;
-const div = firstNumber / secondNumber;
-const mul = firstNumber * secondNumber;
-const res = firstNumber % secondNumber;
+grade_1 = Number(grade_1);
+grade_2 = Number(grade_2);
+grade_3 = Number(grade_3);
 
-alert(`A soma dos números é: ${sum};
-A subtração dos números é: ${sub};
-A divisão dos números é: ${div};
-A multiplicação dos números é: ${mul};
-O resto da divisão dos números é: ${res}.`);
+let average = (grade_1 + grade_2 + grade_3) / 3;
+
+if (average >= 7) {
+  alert(
+    `Parabéns pelo seu empenho, ${name}. Você foi aprovado com a média ${average.toFixed(
+      2
+    )}.`
+  );
+} else {
+  alert(
+    `Infelizmente você não passou direto, ${name}. Sua média foi ${average.toFixed(
+      2
+    )}, mas com esforço e dedicação você se sairá bem no exame de recuperação.`
+  );
+}
