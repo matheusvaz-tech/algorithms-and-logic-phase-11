@@ -36,4 +36,6 @@ while (Number(result) !== randomNumber) {
   x++;
 }
 
-alert(`Parabéns! Você adivinhou em ${x} tentativas.`);
+alert(
+  `Parabéns! O número que pensei foi o ${randomNumber} e você adivinhou em ${x} tentativas.`
+);
